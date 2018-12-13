@@ -79,7 +79,7 @@ foreach($subscription in $subscriptionList)
                  if($VM -eq $null)
                 {
                     $backupItemInfo | Add-Member -type NoteProperty -name ContainerName -value $containerName
-                    $backupItemInfo | Add-Member -type NoteProperty -name Status -value "Orphaned backup/VM in another sub/On-Premises VM"
+                    $backupItemInfo | Add-Member -type NoteProperty -name Status -value "Orphaned backup/On-Premises VM"
                 }
                 else
                 {
@@ -134,7 +134,7 @@ foreach($subscription in $subscriptionList)
                    if($VM -eq $null)
                 {
                     $backupItemInfo | Add-Member -type NoteProperty -name ContainerName -value $containerNameVM
-                    $backupItemInfo | Add-Member -type NoteProperty -name Status -value "Orphaned backup/VM in another sub"
+                    $backupItemInfo | Add-Member -type NoteProperty -name Status -value "Orphaned backup"
                 }
                 else
                 {
